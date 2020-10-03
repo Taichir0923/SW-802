@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+    position: relative;
+}
+.main__caption {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-size: 4rem;
+    color: #fff;
+    transform: translateY(-50%);
+}
+.main button {
+    border: 5px solid #fff;
+    background: none;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    transition: .5s;
+}
+.main button:hover {
+    background: #fff;
+    color: #000;
+}
+.main .active {
+    background: #fff;
+    color: #000;
+}
+.main .active:hover {
+    background: none;
+    color: #fff;
+}
+@media(max-width: 1200px){
+    .main__caption {
+        font-size: 2rem;
+    }
+    .main button {
+        padding: 1rem 2rem;
+        margin-top: 1.5rem;
+    }
+}
