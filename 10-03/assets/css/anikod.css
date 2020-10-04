@@ -2,9 +2,13 @@
     margin: 0;
     padding: 0;
 }
+img {
+    width: 100%;
+}
 .main {
     position: relative;
     width: 100%;
+    padding-bottom: 63px;
 }
 .main .header {
     width: 100%;
@@ -21,6 +25,8 @@
 .main .header img {
     width: 105px;
 }
+
+/* mobile Nav start*/
 .mobile-nav {
     width: 100%;
     background: #223140;
@@ -43,6 +49,78 @@
     margin-bottom: 5px;
 }
 
+/*mobile nav ends*/
+
+
+/* ad header starts */
+
+.main .ad-header {
+    width: 100%;
+    margin: 5px 0;
+}
+
+/*ad header ends */
+
+
+/* anime section starts */
+
+.main .all-anime-section {
+    width: 100%;
+    padding: 1.5rem 0;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0, .4);
+}
+.main .all-anime-section h3 {
+    margin-left: 20px;
+    border-left: 5px solid #00acc1;
+    padding-left: 1rem;
+}
+.single__anime__box {
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+/* anime section ends */
+
+
+
+/* mobile footer starts */
+.main .mobile-footer {
+    width: 100%;
+    padding: 1rem 0;
+    background: #223140;
+    display: flex;
+    justify-content: space-around;
+    color: #fafafa;
+}
+.mobile-footer__items {
+    width: 45%;
+}
+.mobile-footer__items ul {
+    margin-top: 1rem;
+}
+.mobile-footer__items ul li {
+    list-style: none;
+    margin: 10px 0;
+    font-weight: 700;
+    font-size: 12px;
+}
+.mobile-footer__items span {
+    margin-right: 2rem;
+}
+.mobile-footer__items img {
+    width: 68px;
+}
+
+.web-footer {
+    display: none;
+}
+
+/* mobile footer ends */
+
+
 
 @media(min-width: 768px){
     .main .header .menu {
@@ -59,11 +137,30 @@
     .mobile-nav {
         display: none;
     }
+    .animes__row {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .single__anime__box {
+        width: 30%;
+    }
+    .main {
+        padding-bottom: 0;
+    }
 }
 @media(min-width: 1200px){
     .container {
         max-width: 1150px;
         margin: auto;
+    }
+    .main .ad-header {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .main .ad-header img {
+        width: 90%;
     }
     .main .main-header {
         background: #223140;
@@ -71,5 +168,37 @@
     }
     header-items img {
         width: 126px;
+    }
+    .mobile-footer-nav{
+        width: 100%;
+        background: #223140;
+    }
+    .main .mobile-footer {
+        display: none;
+    }
+    .mobile-footer-nav .web-footer {
+        display: flex !important;
+        width: 100%;
+        justify-content: space-around;
+        padding: 2rem 0;
+        color: #fafafa;
+    }
+    .web__footer__items {
+        width: 30%;
+    }
+    .web__footer__items img {
+        width: 125px;
+        margin-bottom: 1rem;
+    }
+    .web__footer__items .icons span {
+        margin: .75rem;
+    }
+    .web__footer__items ul li {
+        list-style: none;
+        margin: 1rem 0;
+        font-weight: 700;
+    }
+    .web__footer__items ul li:first-child {
+        margin-top: 0;
     }
 }
