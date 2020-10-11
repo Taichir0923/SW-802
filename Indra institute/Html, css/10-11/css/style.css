@@ -1,0 +1,31 @@
+.box {
+	width: 100%;	
+	border: 1px solid #000;
+	position: relative;
+	color: #fff
+}
+.box .caption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0,0,0,.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	font-weight: 700;
+	transition: .3s;
+	transform: scaleY(0);
+}
+.box:hover .caption {
+	transform: scaleY(1);
+	cursor: pointer;
+}
+video {
+	width: 100%
+}
+img {
+	width: 100%
+}
