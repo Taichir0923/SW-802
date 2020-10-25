@@ -1,0 +1,23 @@
+.header--1 {
+  width: 100%;
+  padding: 2rem 0;
+  background: #a64dff;
+}
+
+.header--2 {
+  width: 100%;
+  padding: 2rem 0;
+  background: green;
+}
+
+.header--3 {
+  width: 100%;
+  padding: 2rem 0;
+  background: orange;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=style.css.map */

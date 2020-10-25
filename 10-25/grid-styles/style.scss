@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 320px) 1fr;
+    grid-template-rows: 80px 200px 400px 80px;
+    grid-gap: 1rem;
+    div {
+        background: orangered;
+        font-size: 3rem;
+        color: #fff;
+    }
+    .header {
+        grid-column: 1 / 5;
+    }
+    .side {
+        grid-row: 2 / 4;
+        grid-column: 4 / 5;
+    }
+    .content {
+        grid-column: 1 / 4;
+    }
+    .footer {
+        grid-column: 1 / 5;
+    }
+}

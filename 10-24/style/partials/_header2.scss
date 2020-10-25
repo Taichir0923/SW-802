@@ -1,0 +1,4 @@
+.header--2 {
+    @include myStyle;
+    background: $myColor2;
+}
