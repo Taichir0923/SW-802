@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #ccc;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+h1 i {
+    padding-top: 2px;
+}
+
+h1::before {
+    position: absolute;
+    transition: .8s;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    font-family: 'Font Awesome 5 Brands';
+}
+h1:nth-child(1)::before {
+	content: '\f16d';
+	color: orangered;
+	/*border-bottom: 5px solid yellow;*/
+	height: 0;
+}
+h1:nth-child(2)::before {
+	content: '\f16d';
+	color: orangered;
+	/*border-bottom: 5px solid yellow;*/
+	height: 0;
+}
+h1:nth-child(3)::before {
+	content: '\f16d';
+	color: orangered;
+	/*border-bottom: 5px solid yellow;*/
+	height: 0;
+}
+h1:hover::before {
+	height: 100%
+}
